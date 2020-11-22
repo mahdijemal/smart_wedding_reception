@@ -23,12 +23,12 @@ personnel::~personnel()
 
 void personnel::on_ajouter_clicked()
 
-    {
+    {  QString identifiant =ui->identifiant->text();
       QString nom =ui->nom->text();
-      QString identifiant =ui->identifiant->text();
-       QString role =ui->role->text();
-     QString salaire =ui->salaire->text();
-      gestion_personnel p(nom,identifiant,role,salaire) ;
+
+       QString prenom =ui->prenom->text();
+     QString nbrj =ui->nbj->text();
+      gestion_personnel p(nom,identifiant,prenom,nbrj) ;
       bool test = p.ajouter_personnel();
       if (test)
 
@@ -53,3 +53,8 @@ void personnel::on_supprimer_clicked()
     if (test)
     {ui->tableView1->setModel(pers.afficher_personnel());
 }}
+
+void personnel::on_afficher_clicked()
+{
+     ui->tableView1->setModel(pers.afficher_personnel());
+}

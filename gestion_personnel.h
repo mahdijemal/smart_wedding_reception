@@ -10,19 +10,19 @@ class gestion_personnel
         public:
             void setnom(QString n);
             void setid(QString id);
-            void setrole(QString r);
-            void setsalaire(QString s);
+            void setprenom(QString p);
+            void setnbrj(QString nb);
             QString getnom();
             QString getid();
-            QString getrole();
-             QString getsalaire();
+            QString getprenom();
+             QString getnbrj();
            gestion_personnel();
-           gestion_personnel(QString nom ,QString identifiant ,QString role,QString salaire );
+           gestion_personnel(QString nom ,QString identifiant ,QString prenom,QString nbrj );
            bool ajouter_personnel();
            QSqlQueryModel *afficher_personnel();
            bool suprimerpersonnel(QString identifiant);
         private:
-            QString nom , identifiant ,role ,salaire ;
+            QString nom , identifiant ,prenom ,nbrj ;
 
 
         };

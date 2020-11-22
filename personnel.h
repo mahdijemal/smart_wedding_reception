@@ -24,6 +24,8 @@ private slots:
 
     void on_supprimer_clicked();
 
+    void on_afficher_clicked();
+
 private:
     Ui::personnel *ui;
  gestion_personnel pers;
