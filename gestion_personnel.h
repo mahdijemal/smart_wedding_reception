@@ -21,6 +21,8 @@ class gestion_personnel
            bool ajouter_personnel();
            QSqlQueryModel *afficher_personnel();
            bool suprimerpersonnel(QString identifiant);
+           bool  modifierpersonnel(QString identifiant , QString nom, QString prenom,QString nbrj );
+
         private:
             QString nom , identifiant ,prenom ,nbrj ;
 

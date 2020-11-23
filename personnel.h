@@ -5,6 +5,7 @@
 #include <QDialog>
 #include "ui_personnel.h"
 #include <QString>
+#include"role.h"
 
 
 namespace Ui {
@@ -26,9 +27,15 @@ private slots:
 
     void on_afficher_clicked();
 
+
+    void on_modifier_clicked();
+
+    void on_ajouter_role_clicked();
+
 private:
     Ui::personnel *ui;
  gestion_personnel pers;
+ role r;
 };
 
 #endif // PERSONNEL_H

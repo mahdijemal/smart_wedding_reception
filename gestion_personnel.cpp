@@ -60,6 +60,18 @@ bool gestion_personnel::suprimerpersonnel(QString ident)
     return  query.exec();
 }
 
+bool  gestion_personnel::modifierpersonnel(QString identifiant, QString nom, QString prenom,QString nbrj )
+{
+    QSqlQuery query;
+    query.prepare("UPDATE  PERSONNEL SET IDENTIFIANT='"+identifiant+"',NOM='"+nom+"',PRENOM='"+prenom+"',NBRJ='"+nbrj+"'WHERE IDENTIFIANT='"+identifiant+"' ");
+    query.bindValue(":identifiant",identifiant);
+    query.bindValue(":nom",nom);
+    query.bindValue(":prenom",prenom);
+    query.bindValue(":nbrj",nbrj);
+    return  query.exec();
+
+
+}
 
 
 

@@ -306,7 +306,7 @@
        </rect>
       </property>
       <property name="text">
-       <string>salaire</string>
+       <string>nom</string>
       </property>
      </widget>
      <widget class="QRadioButton" name="radioButton">
@@ -326,10 +326,10 @@
     <widget class="QGroupBox" name="groupBox_7">
      <property name="geometry">
       <rect>
-       <x>190</x>
-       <y>470</y>
-       <width>191</width>
-       <height>121</height>
+       <x>10</x>
+       <y>320</y>
+       <width>171</width>
+       <height>141</height>
       </rect>
      </property>
      <property name="title">
@@ -385,6 +385,124 @@
       <string>Afficher</string>
      </property>
     </widget>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>460</y>
+       <width>301</width>
+       <height>161</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>modification</string>
+     </property>
+     <widget class="QPushButton" name="modifier">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>130</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>modifier</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>30</y>
+        <width>56</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>identifiant</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>60</y>
+        <width>56</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Nom</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_14">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>90</y>
+        <width>56</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>prenom</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="modid">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>30</y>
+        <width>71</width>
+        <height>21</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="modnom">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>60</y>
+        <width>71</width>
+        <height>21</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="modprenom">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>90</y>
+        <width>71</width>
+        <height>21</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_15">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>110</y>
+        <width>81</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;nombre de jour&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;travaillé&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="modnbrj">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>140</y>
+        <width>71</width>
+        <height>21</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
    </widget>
    <widget class="QWidget" name="tab_2">
     <attribute name="title">
@@ -402,7 +520,7 @@
      <property name="title">
       <string>Ajout</string>
      </property>
-     <widget class="QPushButton" name="ajouter2">
+     <widget class="QPushButton" name="ajouter_role">
       <property name="geometry">
        <rect>
         <x>40</x>
@@ -464,7 +582,7 @@
        </rect>
       </property>
      </widget>
-     <widget class="QLineEdit" name="salaire_2">
+     <widget class="QLineEdit" name="salaire">
       <property name="geometry">
        <rect>
         <x>90</x>
@@ -485,7 +603,7 @@
       </property>
      </widget>
     </widget>
-    <widget class="QTableView" name="tableView_2">
+    <widget class="QTableView" name="tableView2">
      <property name="geometry">
       <rect>
        <x>400</x>
@@ -604,6 +722,19 @@
      </property>
      <property name="text">
       <string>Statistique</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="afficher2">
+     <property name="geometry">
+      <rect>
+       <x>670</x>
+       <y>360</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Afficher</string>
      </property>
     </widget>
    </widget>

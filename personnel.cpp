@@ -58,3 +58,47 @@ void personnel::on_afficher_clicked()
 {
      ui->tableView1->setModel(pers.afficher_personnel());
 }
+
+void personnel::on_modifier_clicked()
+{
+    QString identifiant =ui->modid->text();
+      QString nom =ui->modnom->text();
+      QString prenom=ui->modprenom->text();
+         QString nbrj=ui->modnbrj->text();
+    bool test = pers.modifierpersonnel(identifiant,nom,prenom,nbrj);
+
+      if(test)
+      {
+          ui->tableView1->setModel(pers.afficher_personnel());
+
+
+      }
+      else {
+
+      }
+}
+
+void personnel::on_ajouter_role_clicked()
+{QString idrole =ui->idrole->text();
+    QString nomrole =ui->nomrole->text();
+
+     QString salaire =ui->salaire->text();
+
+    role r(idrole,nomrole,salaire) ;
+    bool test = r.ajouter_role();
+    if (test)
+
+    {
+        ui->tableView2->setModel(r.afficher_role());
+
+        //QMessageBox::information(nullptr, QObject::tr("ajouter un personnel"),
+                             //  QObject::tr("personnel ajouter.\n"));
+
+
+  }
+    else { //QMessageBox::critical(nullptr, QObject::tr("ajouter un personnel"),
+                                   // QObject::tr("personnel non ajouter.\n"));
+
+    }
+
+}

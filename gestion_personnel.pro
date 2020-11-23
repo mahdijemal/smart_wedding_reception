@@ -21,13 +21,15 @@ SOURCES += \
     gestion_personnel.cpp \
     main.cpp \
     mainwindow.cpp \
-    personnel.cpp
+    personnel.cpp \
+    role.cpp
 
 HEADERS += \
     connection.h \
     gestion_personnel.h \
     mainwindow.h \
-    personnel.h
+    personnel.h \
+    role.h
 
 FORMS += \
     mainwindow.ui \
