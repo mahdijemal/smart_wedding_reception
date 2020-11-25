@@ -6,12 +6,13 @@
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    MainWindow w;
-    w.show();
+
+
     connecion c;
     bool test=c.ouvrirconnexion();
+      MainWindow w;
     if(test){
-
+     w.show();
     QMessageBox::information(nullptr,QObject::tr("database is open"),
                              QObject::tr("connexion etablie"),
                              QMessageBox::Ok);}

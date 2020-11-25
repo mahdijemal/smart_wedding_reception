@@ -42,8 +42,8 @@ QSqlQueryModel * Client::afficher()
     model->setQuery("SELECT* FROM Client");
     model->setHeaderData(0, Qt::Horizontal, QObject::tr("ID"));
     model->setHeaderData(1, Qt::Horizontal,  QObject::tr("NOM"));
-    model->setHeaderData(1, Qt::Horizontal,  QObject::tr("prenom"));
-    model->setHeaderData(1, Qt::Horizontal,  QObject::tr("Tfete"));
+    model->setHeaderData(2, Qt::Horizontal,  QObject::tr("prenom"));
+    model->setHeaderData(3, Qt::Horizontal,  QObject::tr("Tfete"));
      return model;
 
 }
