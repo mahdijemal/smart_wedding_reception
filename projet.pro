@@ -21,19 +21,23 @@ SOURCES += \
     connexion.cpp \
     login.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    reservation.cpp
 
 HEADERS += \
     Client.h \
     connexion.h \
     login.h \
-    mainwindow.h
+    mainwindow.h \
+    reservation.h
 
 FORMS += \
-    login.ui \
     mainwindow.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    res.qrc
