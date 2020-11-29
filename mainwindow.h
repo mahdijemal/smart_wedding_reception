@@ -5,6 +5,11 @@
 #include"client.h"
 #include"reservation.h"
 #include<QString>
+#include "smtp.h"
+#include "stqt_type.h"
+#include <QFileDialog>
+#include <QDialog>
+
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -21,7 +26,6 @@ public:
 private slots:
     void on_pushButton_ajouter_clicked();
 
-   void on_background_2_linkActivated(const QString &link);
 
     void on_pushButton_clicked();
 
@@ -69,9 +73,17 @@ private slots:
 
     void on_pushButton_modifierR_clicked();
 
+    void sendMail();
+    void mailSent(QString);
+    void browse();
+
+    void on_stat_push_clicked();
+
 private:
     Ui::MainWindow *ui;
     Client tmpclient;
     Reservation tmpreservation;
+    QStringList files;
+     stqt_type *s;
 };
 #endif // MAINWINDOW_H

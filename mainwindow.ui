@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1177</width>
-    <height>671</height>
+    <width>479</width>
+    <height>491</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,8 +17,8 @@
    <widget class="QStackedWidget" name="stackedWidget">
     <property name="geometry">
      <rect>
-      <x>300</x>
-      <y>40</y>
+      <x>10</x>
+      <y>20</y>
       <width>441</width>
       <height>431</height>
      </rect>
@@ -27,7 +27,7 @@
      <string notr="true">background-image: url(:/res/image/image5.png);</string>
     </property>
     <property name="currentIndex">
-     <number>3</number>
+     <number>2</number>
     </property>
     <widget class="QWidget" name="page">
      <property name="styleSheet">
@@ -173,7 +173,7 @@ background-image: url(:/res/image/Capture1.PNG);</string>
      <widget class="QTabWidget" name="tabWidget">
       <property name="geometry">
        <rect>
-        <x>40</x>
+        <x>30</x>
         <y>50</y>
         <width>371</width>
         <height>341</height>
@@ -183,7 +183,7 @@ background-image: url(:/res/image/Capture1.PNG);</string>
        <string notr="true">background-image: url(:/res/image/image6.png);</string>
       </property>
       <property name="currentIndex">
-       <number>3</number>
+       <number>4</number>
       </property>
       <widget class="QWidget" name="tab">
        <attribute name="title">
@@ -543,6 +543,24 @@ background-image: url(:/res/image/Capture1.PNG);</string>
         </property>
        </widget>
       </widget>
+      <widget class="QWidget" name="tab_5">
+       <attribute name="title">
+        <string>stat</string>
+       </attribute>
+       <widget class="QPushButton" name="stat_push">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>110</y>
+          <width>151</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>stat</string>
+        </property>
+       </widget>
+      </widget>
      </widget>
      <widget class="QPushButton" name="pushButton_16">
       <property name="geometry">
@@ -591,7 +609,7 @@ background-image: url(:/res/image/Capture1.PNG);</string>
        <string notr="true">background-image: url(:/res/image/image6.png);</string>
       </property>
       <property name="currentIndex">
-       <number>3</number>
+       <number>4</number>
       </property>
       <widget class="QWidget" name="tab_7">
        <attribute name="title">
@@ -1043,6 +1061,92 @@ background-image: url(:/res/image/Capture1.PNG);</string>
         </property>
        </widget>
       </widget>
+      <widget class="QWidget" name="tab_6">
+       <attribute name="title">
+        <string>mailing</string>
+       </attribute>
+       <widget class="QPushButton" name="browseBtn">
+        <property name="geometry">
+         <rect>
+          <x>270</x>
+          <y>160</y>
+          <width>75</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Browse ...</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="sendBtn">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>230</y>
+          <width>351</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Send</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="mail_pass">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>30</y>
+          <width>141</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="echoMode">
+         <enum>QLineEdit::Password</enum>
+        </property>
+        <property name="placeholderText">
+         <string>your mail password</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="file">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>160</y>
+          <width>241</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="placeholderText">
+         <string>attachement here</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="client_id">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>120</y>
+          <width>331</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="placeholderText">
+         <string>client id</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="rcpt">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>80</y>
+          <width>331</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="placeholderText">
+         <string>recipient</string>
+        </property>
+       </widget>
+      </widget>
      </widget>
      <widget class="QPushButton" name="pushButton_17">
       <property name="geometry">
@@ -1100,7 +1204,7 @@ background-image: url(:/res/image/Capture1.PNG);</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1177</width>
+     <width>479</width>
      <height>22</height>
     </rect>
    </property>

@@ -4,7 +4,7 @@
 #include "reservation.h"
 #include<QMessageBox>
 #include<QString>
-#include "smtp.h"
+
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -15,6 +15,10 @@ MainWindow::MainWindow(QWidget *parent)
 
 
     ui->tableView_2->setModel(tmpreservation.afficher());
+
+    //for email tab
+    connect(ui->sendBtn, SIGNAL(clicked()),this, SLOT(sendMail()));
+    connect(ui->browseBtn, SIGNAL(clicked()), this, SLOT(browse()));
 
 }
 
@@ -238,3 +242,70 @@ void MainWindow::on_pushButton_modifierR_clicked()
                                 "Click Cancel to exit."), QMessageBox::Cancel);
 
 }}
+
+
+//mailing
+void  MainWindow::browse()
+{
+    files.clear();
+
+    QFileDialog dialog(this);
+    dialog.setDirectory(QDir::homePath());
+    dialog.setFileMode(QFileDialog::ExistingFiles);
+
+    if (dialog.exec())
+        files = dialog.selectedFiles();
+
+    QString fileListString;
+    foreach(QString file, files)
+        fileListString.append( "\"" + QFileInfo(file).fileName() + "\" " );
+
+    ui->file->setText( fileListString );
+
+}
+void   MainWindow::sendMail()
+{
+
+     QString msg;
+    QSqlQuery query;
+    query.prepare("select * from RESERVATION where IDENTIFIANT= :id");
+    query.bindValue(":id", ui->client_id->text());
+    query.exec();
+    while(query.next()){
+     msg="Band : "+query.value(1).toString()+" -- Salle : "+query.value(2).toString()+" -- Photographe : "+query.value(3).toString()
+             +" -- Serveurs : "+query.value(4).toString()+" -- traiteur : "+query.value(5).toString() +" -- Securite : "+query.value(6).toString();
+
+    }
+
+
+    Smtp* smtp = new Smtp("houssem.abida@esprit.tn",ui->mail_pass->text(), "smtp.gmail.com");
+    connect(smtp, SIGNAL(status(QString)), this, SLOT(mailSent(QString)));
+
+
+
+    if( !files.isEmpty() )
+        smtp->sendMail("houssem.abida@esprit.tn", ui->rcpt->text() , "details de reservation",msg, files );
+    else
+        smtp->sendMail("houssem.abida@esprit.tn", ui->rcpt->text() , "details de reservation",msg);
+}
+void   MainWindow::mailSent(QString status)
+{
+
+    if(status == "Message sent")
+        QMessageBox::warning( nullptr, tr( "Qt Simple SMTP client" ), tr( "Message sent!\n\n" ) );
+    ui->rcpt->clear();
+    ui->file->clear();
+    ui->mail_pass->clear();
+     ui->client_id->clear();
+}
+
+
+
+void MainWindow::on_stat_push_clicked()
+{
+    s = new stqt_type();
+
+  s->setWindowTitle("statistique");
+  s->pie();
+  s->show();
+}

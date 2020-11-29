@@ -1,5 +1,5 @@
-QT       += core gui sql
-CONFIG += console
+QT       += core gui sql network charts
+
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -21,16 +21,21 @@ SOURCES += \
     connexion.cpp \
     main.cpp \
     mainwindow.cpp \
-    reservation.cpp
+    reservation.cpp \
+    smtp.cpp \
+    stqt_type.cpp
 
 HEADERS += \
     Client.h \
     connexion.h \
     mainwindow.h \
-    reservation.h
+    reservation.h \
+    smtp.h \
+    stqt_type.h
 
 FORMS += \
-    mainwindow.ui
+    mainwindow.ui \
+    stqt_type.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
@@ -39,16 +44,3 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 RESOURCES += \
     res.qrc
-FORMS += \
-
-QT       += core gui
-QT       += core gui charts
-QT       += core network
-QT += network
-QT  +=sql
-LIBS += -LC:/OpenSSL-Win32/bin
-# Default rules for deployment.
-qnx: target.path = /tmp/$${TARGET}/bin
-else: unix:!android: target.path = /opt/$${TARGET}/bin
-!isEmpty(target.path): INSTALLS += target
-
