@@ -20,6 +20,8 @@ public:
     bool supprimer(int id_c);
     bool modifier(int ref,int date,QString prenom,QString nom,QString Tfete);
     QSqlQueryModel *afficher();
+    bool rechercher (int id );
+       QSqlQueryModel * tri();
 
 private:
    int id,date;

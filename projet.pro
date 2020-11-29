@@ -19,7 +19,6 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
     Client.cpp \
     connexion.cpp \
-    login.cpp \
     main.cpp \
     mainwindow.cpp \
     reservation.cpp
@@ -27,7 +26,6 @@ SOURCES += \
 HEADERS += \
     Client.h \
     connexion.h \
-    login.h \
     mainwindow.h \
     reservation.h
 
@@ -41,3 +39,16 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 RESOURCES += \
     res.qrc
+FORMS += \
+
+QT       += core gui
+QT       += core gui charts
+QT       += core network
+QT += network
+QT  +=sql
+LIBS += -LC:/OpenSSL-Win32/bin
+# Default rules for deployment.
+qnx: target.path = /tmp/$${TARGET}/bin
+else: unix:!android: target.path = /opt/$${TARGET}/bin
+!isEmpty(target.path): INSTALLS += target
+

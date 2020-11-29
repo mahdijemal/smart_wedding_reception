@@ -49,7 +49,7 @@ QSqlQueryModel * Client::afficher()
     model->setHeaderData(1, Qt::Horizontal,  QObject::tr("NOM"));
     model->setHeaderData(2, Qt::Horizontal,  QObject::tr("prenom"));
     model->setHeaderData(3, Qt::Horizontal,  QObject::tr("Tfete"));
-     model->setHeaderData(3, Qt::Horizontal,  QObject::tr("date"));
+     model->setHeaderData(4, Qt::Horizontal,  QObject::tr("date"));
      return model;
 
 }
@@ -72,6 +72,33 @@ bool Client::modifier(int ref,int date, QString prenom,QString nom,QString Tfete
 
 
     return       edit.exec()  ;
+}
+bool Client:: rechercher (int id )
+{
+    QSqlQuery query;
+               query.prepare("Select * from Client where ID= :ID");
+               query.bindValue(":ID", id);
+               query.exec();
+                QSqlQueryModel * model = new QSqlQueryModel();
+              model->setQuery(query);
+              if(model->rowCount() == 0){ return false;}//thabet e requete ili b3thetha el SQL heki el 7aja mawjouda wala la
+           return  true;
+
+}
+QSqlQueryModel *Client:: tri()
+{
+    QSqlQueryModel * model= new QSqlQueryModel();
+     model->setQuery("select * from Client order by ID DESC");
+    model->setHeaderData(0, Qt::Horizontal, QObject::tr("ID"));
+    model->setHeaderData(1, Qt::Horizontal,  QObject::tr("NOM"));
+    model->setHeaderData(2, Qt::Horizontal,  QObject::tr("prenom"));
+    model->setHeaderData(3, Qt::Horizontal,  QObject::tr("Tfete"));
+     model->setHeaderData(4, Qt::Horizontal,  QObject::tr("date"));
+
+     return model;
+
+
+
 }
 
 

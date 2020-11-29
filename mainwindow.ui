@@ -27,7 +27,7 @@
      <string notr="true">background-image: url(:/res/image/image5.png);</string>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>3</number>
     </property>
     <widget class="QWidget" name="page">
      <property name="styleSheet">
@@ -183,7 +183,7 @@ background-image: url(:/res/image/Capture1.PNG);</string>
        <string notr="true">background-image: url(:/res/image/image6.png);</string>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>3</number>
       </property>
       <widget class="QWidget" name="tab">
        <attribute name="title">
@@ -325,11 +325,47 @@ background-image: url(:/res/image/Capture1.PNG);</string>
        <widget class="QTableView" name="tableView">
         <property name="geometry">
          <rect>
-          <x>30</x>
-          <y>20</y>
+          <x>20</x>
+          <y>10</y>
           <width>321</width>
-          <height>271</height>
+          <height>251</height>
          </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_26">
+        <property name="geometry">
+         <rect>
+          <x>260</x>
+          <y>280</y>
+          <width>93</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Trier</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_7">
+        <property name="geometry">
+         <rect>
+          <x>130</x>
+          <y>283</y>
+          <width>113</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_25">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>280</y>
+          <width>93</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Rechercher</string>
         </property>
        </widget>
       </widget>
@@ -545,8 +581,8 @@ background-image: url(:/res/image/Capture1.PNG);</string>
      <widget class="QTabWidget" name="tabWidget_3">
       <property name="geometry">
        <rect>
-        <x>40</x>
-        <y>80</y>
+        <x>30</x>
+        <y>60</y>
         <width>371</width>
         <height>341</height>
        </rect>
@@ -555,7 +591,7 @@ background-image: url(:/res/image/Capture1.PNG);</string>
        <string notr="true">background-image: url(:/res/image/image6.png);</string>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>3</number>
       </property>
       <widget class="QWidget" name="tab_7">
        <attribute name="title">
@@ -623,36 +659,6 @@ background-image: url(:/res/image/Capture1.PNG);</string>
          <string>Identifiant</string>
         </property>
        </widget>
-       <widget class="QComboBox" name="comboBox">
-        <property name="geometry">
-         <rect>
-          <x>170</x>
-          <y>50</y>
-          <width>121</width>
-          <height>22</height>
-         </rect>
-        </property>
-       </widget>
-       <widget class="QComboBox" name="comboBox_2">
-        <property name="geometry">
-         <rect>
-          <x>170</x>
-          <y>90</y>
-          <width>121</width>
-          <height>22</height>
-         </rect>
-        </property>
-       </widget>
-       <widget class="QComboBox" name="comboBox_3">
-        <property name="geometry">
-         <rect>
-          <x>170</x>
-          <y>130</y>
-          <width>121</width>
-          <height>22</height>
-         </rect>
-        </property>
-       </widget>
        <widget class="QLabel" name="label_16">
         <property name="geometry">
          <rect>
@@ -664,16 +670,6 @@ background-image: url(:/res/image/Capture1.PNG);</string>
         </property>
         <property name="text">
          <string>Nom d'equipe de serveur</string>
-        </property>
-       </widget>
-       <widget class="QComboBox" name="comboBox_4">
-        <property name="geometry">
-         <rect>
-          <x>170</x>
-          <y>170</y>
-          <width>121</width>
-          <height>22</height>
-         </rect>
         </property>
        </widget>
        <widget class="QLabel" name="label_17">
@@ -689,16 +685,6 @@ background-image: url(:/res/image/Capture1.PNG);</string>
          <string>Nom du traiteur</string>
         </property>
        </widget>
-       <widget class="QComboBox" name="comboBox_5">
-        <property name="geometry">
-         <rect>
-          <x>170</x>
-          <y>210</y>
-          <width>121</width>
-          <height>22</height>
-         </rect>
-        </property>
-       </widget>
        <widget class="QLabel" name="label_18">
         <property name="geometry">
          <rect>
@@ -712,17 +698,7 @@ background-image: url(:/res/image/Capture1.PNG);</string>
          <string>Nom d'equipe de securiter</string>
         </property>
        </widget>
-       <widget class="QComboBox" name="comboBox_6">
-        <property name="geometry">
-         <rect>
-          <x>171</x>
-          <y>250</y>
-          <width>121</width>
-          <height>22</height>
-         </rect>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="pushButton_12">
+       <widget class="QPushButton" name="pushButton_ajouter_2">
         <property name="geometry">
          <rect>
           <x>270</x>
@@ -735,18 +711,114 @@ background-image: url(:/res/image/Capture1.PNG);</string>
          <string>ajouter</string>
         </property>
        </widget>
+       <widget class="QLineEdit" name="lineEdit_NF">
+        <property name="geometry">
+         <rect>
+          <x>170</x>
+          <y>50</y>
+          <width>121</width>
+          <height>20</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_B">
+        <property name="geometry">
+         <rect>
+          <x>170</x>
+          <y>90</y>
+          <width>121</width>
+          <height>20</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_ph">
+        <property name="geometry">
+         <rect>
+          <x>170</x>
+          <y>130</y>
+          <width>121</width>
+          <height>20</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_ser">
+        <property name="geometry">
+         <rect>
+          <x>170</x>
+          <y>170</y>
+          <width>121</width>
+          <height>20</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_nt">
+        <property name="geometry">
+         <rect>
+          <x>170</x>
+          <y>210</y>
+          <width>121</width>
+          <height>20</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_secu">
+        <property name="geometry">
+         <rect>
+          <x>170</x>
+          <y>250</y>
+          <width>121</width>
+          <height>20</height>
+         </rect>
+        </property>
+       </widget>
       </widget>
       <widget class="QWidget" name="tab_8">
        <attribute name="title">
         <string>afficher</string>
        </attribute>
-       <widget class="QTextBrowser" name="textBrowser">
+       <widget class="QPushButton" name="pushButton_rechercheR">
         <property name="geometry">
          <rect>
           <x>20</x>
-          <y>20</y>
-          <width>321</width>
-          <height>271</height>
+          <y>280</y>
+          <width>93</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Rechercher</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_R">
+        <property name="geometry">
+         <rect>
+          <x>130</x>
+          <y>283</y>
+          <width>113</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_triR">
+        <property name="geometry">
+         <rect>
+          <x>260</x>
+          <y>280</y>
+          <width>93</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Trier</string>
+        </property>
+       </widget>
+       <widget class="QTableView" name="tableView_2">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>30</y>
+          <width>281</width>
+          <height>211</height>
          </rect>
         </property>
        </widget>
@@ -755,7 +827,7 @@ background-image: url(:/res/image/Capture1.PNG);</string>
        <attribute name="title">
         <string>supprimer</string>
        </attribute>
-       <widget class="QPushButton" name="pushButton_8">
+       <widget class="QPushButton" name="pushButton_supprimer">
         <property name="geometry">
          <rect>
           <x>200</x>
@@ -796,6 +868,180 @@ background-image: url(:/res/image/Capture1.PNG);</string>
        <attribute name="title">
         <string>modifier</string>
        </attribute>
+       <widget class="QLabel" name="label_28">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>50</y>
+          <width>121</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Nom de salle des fetes</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_B_3">
+        <property name="geometry">
+         <rect>
+          <x>170</x>
+          <y>90</y>
+          <width>121</width>
+          <height>20</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_29">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>170</y>
+          <width>131</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Nom d'equipe de serveur</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_30">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>10</y>
+          <width>51</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Identifiant</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_nt_3">
+        <property name="geometry">
+         <rect>
+          <x>170</x>
+          <y>210</y>
+          <width>121</width>
+          <height>20</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_31">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>90</y>
+          <width>81</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Nom du bande</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_32">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>130</y>
+          <width>111</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Nom du photographe </string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_ph_3">
+        <property name="geometry">
+         <rect>
+          <x>170</x>
+          <y>130</y>
+          <width>121</width>
+          <height>20</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_33">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>210</y>
+          <width>81</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Nom du traiteur</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_secu_3">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>250</y>
+          <width>121</width>
+          <height>20</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_NF_3">
+        <property name="geometry">
+         <rect>
+          <x>170</x>
+          <y>50</y>
+          <width>121</width>
+          <height>20</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_id_4">
+        <property name="geometry">
+         <rect>
+          <x>170</x>
+          <y>10</y>
+          <width>121</width>
+          <height>21</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_ser_3">
+        <property name="geometry">
+         <rect>
+          <x>170</x>
+          <y>170</y>
+          <width>121</width>
+          <height>20</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_34">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>250</y>
+          <width>131</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Nom d'equipe de securiter</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_modifierR">
+        <property name="geometry">
+         <rect>
+          <x>270</x>
+          <y>280</y>
+          <width>81</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>modifier</string>
+        </property>
+       </widget>
       </widget>
      </widget>
      <widget class="QPushButton" name="pushButton_17">

@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include"client.h"
+#include"reservation.h"
 #include<QString>
 
 QT_BEGIN_NAMESPACE
@@ -20,7 +21,7 @@ public:
 private slots:
     void on_pushButton_ajouter_clicked();
 
-    void on_background_2_linkActivated(const QString &link);
+   void on_background_2_linkActivated(const QString &link);
 
     void on_pushButton_clicked();
 
@@ -33,8 +34,6 @@ private slots:
     void on_pushButton_5_clicked();
 
     void on_pushButton_6_clicked();
-
-    void on_pushButton_10_clicked();
 
     void on_pushButton_15_clicked();
 
@@ -56,8 +55,23 @@ private slots:
 
     void on_pushButton_20_clicked();
 
+    void on_pushButton_25_clicked();
+
+    void on_pushButton_26_clicked();
+
+    void on_pushButton_ajouter_2_clicked();
+
+    void on_pushButton_rechercheR_clicked();
+
+    void on_pushButton_triR_clicked();
+
+    void on_pushButton_supprimer_clicked();
+
+    void on_pushButton_modifierR_clicked();
+
 private:
     Ui::MainWindow *ui;
     Client tmpclient;
+    Reservation tmpreservation;
 };
 #endif // MAINWINDOW_H
