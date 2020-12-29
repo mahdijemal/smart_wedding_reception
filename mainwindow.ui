@@ -18,7 +18,7 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>20</y>
+      <y>10</y>
       <width>441</width>
       <height>431</height>
      </rect>
@@ -27,7 +27,7 @@
      <string notr="true">background-image: url(:/res/image/image5.png);</string>
     </property>
     <property name="currentIndex">
-     <number>2</number>
+     <number>3</number>
     </property>
     <widget class="QWidget" name="page">
      <property name="styleSheet">
@@ -78,6 +78,12 @@ background-image: url(:/res/image/Capture1.PNG);</string>
       </property>
       <property name="styleSheet">
        <string notr="true">background-image: url(:/res/image/Capture5.png);</string>
+      </property>
+      <property name="inputMask">
+       <string/>
+      </property>
+      <property name="text">
+       <string/>
       </property>
      </widget>
     </widget>
@@ -183,7 +189,7 @@ background-image: url(:/res/image/Capture1.PNG);</string>
        <string notr="true">background-image: url(:/res/image/image6.png);</string>
       </property>
       <property name="currentIndex">
-       <number>4</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="tab">
        <attribute name="title">
@@ -192,7 +198,7 @@ background-image: url(:/res/image/Capture1.PNG);</string>
        <widget class="QLabel" name="label">
         <property name="geometry">
          <rect>
-          <x>30</x>
+          <x>20</x>
           <y>20</y>
           <width>51</width>
           <height>31</height>
@@ -205,8 +211,8 @@ background-image: url(:/res/image/Capture1.PNG);</string>
        <widget class="QLineEdit" name="lineEdit_id">
         <property name="geometry">
          <rect>
-          <x>170</x>
-          <y>30</y>
+          <x>100</x>
+          <y>20</y>
           <width>113</width>
           <height>20</height>
          </rect>
@@ -216,7 +222,7 @@ background-image: url(:/res/image/Capture1.PNG);</string>
         <property name="geometry">
          <rect>
           <x>30</x>
-          <y>70</y>
+          <y>50</y>
           <width>47</width>
           <height>14</height>
          </rect>
@@ -229,7 +235,7 @@ background-image: url(:/res/image/Capture1.PNG);</string>
         <property name="geometry">
          <rect>
           <x>30</x>
-          <y>120</y>
+          <y>80</y>
           <width>47</width>
           <height>14</height>
          </rect>
@@ -241,8 +247,8 @@ background-image: url(:/res/image/Capture1.PNG);</string>
        <widget class="QLineEdit" name="lineEdit_nom">
         <property name="geometry">
          <rect>
-          <x>170</x>
-          <y>70</y>
+          <x>100</x>
+          <y>50</y>
           <width>113</width>
           <height>20</height>
          </rect>
@@ -251,8 +257,8 @@ background-image: url(:/res/image/Capture1.PNG);</string>
        <widget class="QLineEdit" name="lineEdit_prenom">
         <property name="geometry">
          <rect>
-          <x>170</x>
-          <y>120</y>
+          <x>100</x>
+          <y>80</y>
           <width>113</width>
           <height>20</height>
          </rect>
@@ -274,8 +280,8 @@ background-image: url(:/res/image/Capture1.PNG);</string>
        <widget class="QLabel" name="label_5">
         <property name="geometry">
          <rect>
-          <x>20</x>
-          <y>170</y>
+          <x>10</x>
+          <y>110</y>
           <width>81</width>
           <height>21</height>
          </rect>
@@ -287,8 +293,8 @@ background-image: url(:/res/image/Capture1.PNG);</string>
        <widget class="QLineEdit" name="lineEdit">
         <property name="geometry">
          <rect>
-          <x>170</x>
-          <y>170</y>
+          <x>100</x>
+          <y>110</y>
           <width>113</width>
           <height>20</height>
          </rect>
@@ -297,8 +303,8 @@ background-image: url(:/res/image/Capture1.PNG);</string>
        <widget class="QLabel" name="label_11">
         <property name="geometry">
          <rect>
-          <x>10</x>
-          <y>210</y>
+          <x>0</x>
+          <y>130</y>
           <width>101</width>
           <height>31</height>
          </rect>
@@ -310,8 +316,31 @@ background-image: url(:/res/image/Capture1.PNG);</string>
        <widget class="QLineEdit" name="lineEdit_date">
         <property name="geometry">
          <rect>
-          <x>170</x>
-          <y>220</y>
+          <x>100</x>
+          <y>140</y>
+          <width>113</width>
+          <height>20</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_19">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>170</y>
+          <width>81</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Identifiant client</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_id_client">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>170</y>
           <width>113</width>
           <height>20</height>
          </rect>
@@ -454,7 +483,7 @@ background-image: url(:/res/image/Capture1.PNG);</string>
         <property name="geometry">
          <rect>
           <x>160</x>
-          <y>190</y>
+          <y>120</y>
           <width>113</width>
           <height>20</height>
          </rect>
@@ -463,8 +492,8 @@ background-image: url(:/res/image/Capture1.PNG);</string>
        <widget class="QLabel" name="label_13">
         <property name="geometry">
          <rect>
-          <x>40</x>
-          <y>80</y>
+          <x>50</x>
+          <y>60</y>
           <width>47</width>
           <height>14</height>
          </rect>
@@ -477,7 +506,7 @@ background-image: url(:/res/image/Capture1.PNG);</string>
         <property name="geometry">
          <rect>
           <x>160</x>
-          <y>140</y>
+          <y>90</y>
           <width>113</width>
           <height>20</height>
          </rect>
@@ -486,8 +515,8 @@ background-image: url(:/res/image/Capture1.PNG);</string>
        <widget class="QLabel" name="label_14">
         <property name="geometry">
          <rect>
-          <x>20</x>
-          <y>190</y>
+          <x>30</x>
+          <y>120</y>
           <width>81</width>
           <height>21</height>
          </rect>
@@ -500,7 +529,7 @@ background-image: url(:/res/image/Capture1.PNG);</string>
         <property name="geometry">
          <rect>
           <x>160</x>
-          <y>90</y>
+          <y>60</y>
           <width>113</width>
           <height>20</height>
          </rect>
@@ -510,7 +539,7 @@ background-image: url(:/res/image/Capture1.PNG);</string>
         <property name="geometry">
          <rect>
           <x>40</x>
-          <y>140</y>
+          <y>90</y>
           <width>47</width>
           <height>14</height>
          </rect>
@@ -522,8 +551,8 @@ background-image: url(:/res/image/Capture1.PNG);</string>
        <widget class="QLabel" name="label_12">
         <property name="geometry">
          <rect>
-          <x>10</x>
-          <y>230</y>
+          <x>20</x>
+          <y>140</y>
           <width>101</width>
           <height>31</height>
          </rect>
@@ -536,10 +565,33 @@ background-image: url(:/res/image/Capture1.PNG);</string>
         <property name="geometry">
          <rect>
           <x>160</x>
-          <y>240</y>
+          <y>150</y>
           <width>113</width>
           <height>20</height>
          </rect>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_id_client_2">
+        <property name="geometry">
+         <rect>
+          <x>160</x>
+          <y>180</y>
+          <width>113</width>
+          <height>20</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_20">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>180</y>
+          <width>81</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Identifiant client</string>
         </property>
        </widget>
       </widget>
@@ -609,7 +661,7 @@ background-image: url(:/res/image/Capture1.PNG);</string>
        <string notr="true">background-image: url(:/res/image/image6.png);</string>
       </property>
       <property name="currentIndex">
-       <number>4</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="tab_7">
        <attribute name="title">
@@ -997,7 +1049,7 @@ background-image: url(:/res/image/Capture1.PNG);</string>
        <widget class="QLineEdit" name="lineEdit_secu_3">
         <property name="geometry">
          <rect>
-          <x>180</x>
+          <x>170</x>
           <y>250</y>
           <width>121</width>
           <height>20</height>

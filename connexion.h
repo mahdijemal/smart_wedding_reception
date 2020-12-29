@@ -1,6 +1,7 @@
 #ifndef CONNEXION_H
 #define CONNEXION_H
 #include <QSqlDatabase>
+#include<QMessageBox>
 //essai
 class connecion
 {
@@ -10,6 +11,7 @@ public:
     connecion();
     bool ouvrirconnexion();
     void fermerconnexion();
+
 };
 
 #endif // CONNECION_H

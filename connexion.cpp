@@ -1,5 +1,6 @@
 #include "connexion.h"
 #include <QSqlError>
+#include<QMessageBox>
 connecion::connecion(){}
 bool connecion::ouvrirconnexion(){
     bool test=false;

@@ -2,6 +2,7 @@
 #include "ui_mainwindow.h"
 #include"client.h"
 #include "reservation.h"
+#include"connexion.h"
 #include<QMessageBox>
 #include<QString>
 
@@ -35,10 +36,11 @@ void MainWindow::on_pushButton_ajouter_clicked()
 {
   int id=ui->lineEdit_id->text().toInt();
   int date=ui->lineEdit_date->text().toInt();
+  int idc=ui->lineEdit_id_client->text().toInt();
   QString nom=ui->lineEdit_nom->text();
   QString prenom=ui->lineEdit_prenom->text();
   QString Tfete=ui->lineEdit->text();
-  Client e(date,id,nom,prenom,Tfete);
+  Client e(date,id,idc,nom,prenom,Tfete);
   bool test= e.ajouter();
 
   if(test){
@@ -67,7 +69,9 @@ void MainWindow::on_pushButton_2_clicked()
 {
     int id_c = ui->lineEdit_2->text().toInt();
     int date_r=ui->lineEdit_6->text().toInt();
-    bool test=tmpclient.modifier(id_c,date_r,ui->lineEdit_nom_3->text(),ui->lineEdit_prenom_3->text(),ui->lineEdit_5->text());
+    int idc=ui->lineEdit_id_client->text().toInt();
+
+    bool test=tmpclient.modifier(id_c,date_r,idc,ui->lineEdit_nom_3->text(),ui->lineEdit_prenom_3->text(),ui->lineEdit_5->text());
     if(test)
     {ui->tableView->setModel(tmpclient.afficher());//refresh
         QMessageBox::information(nullptr, QObject::tr("Supprimer un employe"),
@@ -87,7 +91,20 @@ void MainWindow::on_pushButton_4_clicked()
 
 void MainWindow::on_pushButton_3_clicked()
 {
-    ui->stackedWidget->setCurrentIndex(1);
+    if((ui->lineEdit_4->text()=="superadmin")&&(ui->lineEdit_3->text()=="superadmin"))
+   {
+        QMessageBox::information(nullptr,QObject::tr("access"),
+                                      QObject::tr("acess garantie"),
+                                      QMessageBox::Ok);
+        ui->stackedWidget->setCurrentIndex(1);
+
+
+    }
+    else
+    {   QMessageBox::information(nullptr,QObject::tr("error"),
+                                 QObject::tr("verifie informations"),
+                                 QMessageBox::Ok);
+    }
 
 }
 

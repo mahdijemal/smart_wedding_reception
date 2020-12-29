@@ -10,21 +10,22 @@ class Client
 {
 public:
     Client();
-    Client(int,int,QString,QString,QString);
+    Client(int,int,int,QString,QString,QString);
     QString get_nom();
     QString get_prenom();
     QString get_Tfete();
     int get_id();
+    int get_idc();
      int get_date();
     bool ajouter();
     bool supprimer(int id_c);
-    bool modifier(int ref,int date,QString prenom,QString nom,QString Tfete);
+    bool modifier(int ref,int date,int idc,QString prenom,QString nom,QString Tfete);
     QSqlQueryModel *afficher();
     bool rechercher (int id );
        QSqlQueryModel * tri();
 
 private:
-   int id,date;
+   int id,date,idc;
    QString nom,prenom,Tfete;
 
 
