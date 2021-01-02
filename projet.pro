@@ -1,4 +1,5 @@
 QT       += core gui sql network charts
+QT       += serialport
 
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
@@ -18,6 +19,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     Client.cpp \
+    arduino.cpp \
     connexion.cpp \
     main.cpp \
     mainwindow.cpp \
@@ -27,6 +29,7 @@ SOURCES += \
 
 HEADERS += \
     Client.h \
+    arduino.h \
     connexion.h \
     mainwindow.h \
     reservation.h \

@@ -9,6 +9,7 @@
 #include "stqt_type.h"
 #include <QFileDialog>
 #include <QDialog>
+#include "arduino.h"
 
 
 QT_BEGIN_NAMESPACE
@@ -25,6 +26,7 @@ public:
 
 private slots:
     void on_pushButton_ajouter_clicked();
+
 
 
     void on_pushButton_clicked();
@@ -79,11 +81,16 @@ private slots:
 
     void on_stat_push_clicked();
 
+     void alert();
 private:
     Ui::MainWindow *ui;
     Client tmpclient;
     Reservation tmpreservation;
     QStringList files;
+
      stqt_type *s;
+     //arduino
+     QByteArray data;
+     arduino A;
 };
 #endif // MAINWINDOW_H

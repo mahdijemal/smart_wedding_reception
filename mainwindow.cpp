@@ -20,17 +20,36 @@ MainWindow::MainWindow(QWidget *parent)
     //for email tab
     connect(ui->sendBtn, SIGNAL(clicked()),this, SLOT(sendMail()));
     connect(ui->browseBtn, SIGNAL(clicked()), this, SLOT(browse()));
-
+    //arduino
+          int ret=A.connect_arduino();
+          switch(ret){
+          case(0):qDebug()<< "arduino is availble and connected to :"<< A.getarduino_port_name();
+              break;
+          case(1):qDebug()<< "arduino is availble but not connected to :"<< A.getarduino_port_name();
+              break;
+          case(-1):qDebug()<< "arduino is not availble";
+          }
+          QObject::connect(A.getserial(),SIGNAL(readyRead()),this,SLOT(alert()));
 }
 
+void MainWindow::alert(){
 
+    data=A.read_from_arduino();
+    QString DataAsString = QString(data);
+    qDebug()<< data;
+    if (data=="1"){
+           A.write_to_arduino("1");
+    }
+    if (data=="0"){
+           A.write_to_arduino("0");
+    }
 
+}
 
 MainWindow::~MainWindow()
 {
     delete ui;
 }
-
 
 void MainWindow::on_pushButton_ajouter_clicked()
 {
