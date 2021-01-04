@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/image">
+        <file>image/Capture.png</file>
+        <file>image/Sign In.jpg</file>
+        <file>image/Capture5.png</file>
+        <file>image/Sign up.jpg</file>
+        <file>image/Capture52.png</file>
+        <file>image/menu.jpg</file>
+        <file>image/Capture53.png</file>
+        <file>image/passage.jpg</file>
+        <file>image/Download Travel Landing Page for free.jpg</file>
+        <file>image/Capture54.png</file>
+    </qresource>
+</RCC>

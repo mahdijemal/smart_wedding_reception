@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>dialogper</class>
+ <widget class="QDialog" name="dialogper">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>499</width>
+    <height>366</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">border-image: url(:/image/image/passage.jpg);
+QPushButton
+{
+text-align:center;
+font-size:20px;
+font-family: Impact;
+  color: white;
+  background-color: black;
+  border-width: 0px;
+  border-radius:10px;
+}
+QPushButton:hover { background-color: white;
+color:black;
+text-decoration: underline; }</string>
+  </property>
+  <widget class="QPushButton" name="roles">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>140</y>
+     <width>191</width>
+     <height>141</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/image/image/Capture53.png);</string>
+   </property>
+   <property name="text">
+    <string>2.ROLES</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="peronnel">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>140</y>
+     <width>191</width>
+     <height>141</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/image/image/Capture53.png);</string>
+   </property>
+   <property name="text">
+    <string>1.PERSONNEL</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

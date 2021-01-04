@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>dialogres</class>
+ <widget class="QDialog" name="dialogres">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>641</width>
+    <height>415</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">border-image: url(:/image/image/passage.jpg);</string>
+  </property>
+  <widget class="QPushButton" name="client">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>160</y>
+     <width>151</width>
+     <height>201</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/image/image/Capture53.png);</string>
+   </property>
+   <property name="text">
+    <string>1.CLIENT</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="reservation">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>160</y>
+     <width>151</width>
+     <height>201</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/image/image/Capture53.png);</string>
+   </property>
+   <property name="text">
+    <string>2.RESERVATION</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

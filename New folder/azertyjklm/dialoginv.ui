@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>dialoginv</class>
+ <widget class="QDialog" name="dialoginv">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>491</width>
+    <height>392</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">border-image: url(:/image/image/passage.jpg);</string>
+  </property>
+  <widget class="QPushButton" name="invite">
+   <property name="geometry">
+    <rect>
+     <x>94</x>
+     <y>180</y>
+     <width>121</width>
+     <height>141</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/image/image/Capture53.png);</string>
+   </property>
+   <property name="text">
+    <string>INVITE</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="salle">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>180</y>
+     <width>131</width>
+     <height>141</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/image/image/Capture53.png);</string>
+   </property>
+   <property name="text">
+    <string>SALLE</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

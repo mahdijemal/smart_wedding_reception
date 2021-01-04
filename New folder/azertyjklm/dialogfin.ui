@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>dialogfin</class>
+ <widget class="QDialog" name="dialogfin">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>522</width>
+    <height>366</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">border-image: url(:/image/image/passage.jpg);
+QPushButton
+{
+text-align:center;
+font-size:20px;
+font-family: Impact;
+  color: white;
+  background-color: black;
+  border-width: 0px;
+  border-radius:10px;
+}
+QPushButton:hover { background-color: white;
+color:black;
+text-decoration: underline; }</string>
+  </property>
+  <widget class="QPushButton" name="depenses">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>160</y>
+     <width>201</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/image/image/Capture53.png);</string>
+   </property>
+   <property name="text">
+    <string>Depenses</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="revenus">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>160</y>
+     <width>201</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/image/image/Capture53.png);</string>
+   </property>
+   <property name="text">
+    <string>Revenus</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
