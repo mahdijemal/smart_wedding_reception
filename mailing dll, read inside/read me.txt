@@ -1,0 +1,4 @@
+copy these 2 .dll in C:\Qt\Qt5.9.9\5.9.9\mingw53_32\bin
+
+go to your google account setting and activate less secure applications
+this link should get you there : https://myaccount.google.com/lesssecureapps?gar=1&rapt=AEjHL4P6fmyp3NC8lvUjlthqEvM3qcam4BZXjxqqDtpN8uYjqnzHqzEkAqedy43rZ020kIqlbpw7U5lAwKBnTYIXIVbch0S-HA
