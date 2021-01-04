@@ -27,7 +27,7 @@
      <string notr="true">background-image: url(:/res/image/image5.png);</string>
     </property>
     <property name="currentIndex">
-     <number>3</number>
+     <number>2</number>
     </property>
     <widget class="QWidget" name="page">
      <property name="styleSheet">
@@ -189,7 +189,7 @@ background-image: url(:/res/image/Capture1.PNG);</string>
        <string notr="true">background-image: url(:/res/image/image6.png);</string>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>4</number>
       </property>
       <widget class="QWidget" name="tab">
        <attribute name="title">
@@ -661,7 +661,7 @@ background-image: url(:/res/image/Capture1.PNG);</string>
        <string notr="true">background-image: url(:/res/image/image6.png);</string>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>4</number>
       </property>
       <widget class="QWidget" name="tab_7">
        <attribute name="title">
