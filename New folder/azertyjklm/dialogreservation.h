@@ -5,6 +5,7 @@
 #include <QTimer>
 #include <QString>
 #include <QSqlQuery>
+#include "smtp.h"
 #include <QSqlQueryModel>
 
 namespace Ui {
@@ -83,10 +84,16 @@ private slots:
     void on_nextmodule_clicked();
 
     void on_pushButton_4_clicked();
+    void browse();
+    void sendMail();
+    void mailSent(QString);
+
 
 private:
     Ui::dialogreservation *ui;
     reservation tmpres;
+    QStringList files;
+    QPushButton *browseBtn;
 };
 
 #endif // DIALOGRESERVATION_H

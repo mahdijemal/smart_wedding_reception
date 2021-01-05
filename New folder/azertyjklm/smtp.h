@@ -19,12 +19,12 @@ class Smtp : public QObject
 
 public:
     Smtp( const QString &user, const QString &pass,
-          const QString &host, quint16 port = 465
-            , int timeout = 30000 );
+          const QString &host, int port = 465, int timeout = 30000 );
     ~Smtp();
 
     void sendMail( const QString &from, const QString &to,
-                   const QString &subject, const QString &body );
+                   const QString &subject, const QString &body,
+                   QStringList files = QStringList());
 
 signals:
     void status( const QString &);
@@ -47,10 +47,10 @@ private:
     QString user;
     QString pass;
     QString host;
-    quint16 port;
+    int port;
     enum states{Tls, HandShake ,Auth,User,Pass,Rcpt,Mail,Data,Init,Body,Quit,Close};
     int state;
 
 };
+#endif
 
-#endif // SMTP_H

@@ -19,9 +19,11 @@
 #include "dialogmenu.h"
 #include "ui_dialogmenu.h"
 #include "dialogclient.h"
+#include <QFileDialog>
 #include "ui_dialogclient.h"
 #include "ui_dialogfin.h"
 #include "dialogfin.h"
+#include  "dialogreservation.h"
 #include <QPrinter>
 #include <QPrintDialog>
 #include "dialoginv.h"
@@ -64,6 +66,9 @@ dialogreservation::dialogreservation(QWidget *parent) :
     ui->type_asc->hide();
     ui->type_asc_2->hide();
     ui->type_asc_3->hide();
+    connect(ui->browseBtn, SIGNAL(clicked()), this, SLOT(browse()));
+    connect(ui->sendBtn, SIGNAL(clicked()),this, SLOT(sendMail()));
+
 }
 
 dialogreservation::~dialogreservation()
@@ -471,4 +476,57 @@ void dialogreservation::on_pushButton_4_clicked()
 {
  mail d;
  d.exec();
+}
+void  dialogreservation::browse()
+{
+    files.clear();
+
+    QFileDialog dialog(this);
+    dialog.setDirectory(QDir::homePath());
+    dialog.setFileMode(QFileDialog::ExistingFiles);
+
+    if (dialog.exec())
+        files = dialog.selectedFiles();
+
+    QString fileListString;
+    foreach(QString file, files)
+        fileListString.append( "\"" + QFileInfo(file).fileName() + "\" " );
+
+    ui->file->setText( fileListString );
+
+}
+void   dialogreservation::sendMail()
+{
+
+     QString msg;
+    QSqlQuery query;
+    query.prepare("select * from RESERVATION where IDENTIFIANT= :id");
+    query.bindValue(":id", ui->client_id->text());
+    query.exec();
+    while(query.next()){
+     msg="Band : "+query.value(1).toString()+" -- Salle : "+query.value(2).toString()+" -- Photographe : "+query.value(3).toString()
+             +" -- Serveurs : "+query.value(4).toString()+" -- traiteur : "+query.value(5).toString() +" -- Securite : "+query.value(6).toString();
+
+    }
+
+
+    Smtp* smtp = new Smtp("houssem.abida@esprit.tn",ui->mail_pass->text(), "smtp.gmail.com");
+    connect(smtp, SIGNAL(status(QString)), this, SLOT(mailSent(QString)));
+
+
+
+    if( !files.isEmpty() )
+        smtp->sendMail("houssem.abida@esprit.tn", ui->rcpt->text() , "details de reservation",msg, files );
+    else
+        smtp->sendMail("houssem.abida@esprit.tn", ui->rcpt->text() , "details de reservation",msg);
+}
+void   dialogreservation::mailSent(QString status)
+{
+
+    if(status == "Message sent")
+        QMessageBox::warning( nullptr, tr( "Qt Simple SMTP client" ), tr( "Message sent!\n\n" ) );
+    ui->rcpt->clear();
+    ui->file->clear();
+    ui->mail_pass->clear();
+     ui->client_id->clear();
 }
