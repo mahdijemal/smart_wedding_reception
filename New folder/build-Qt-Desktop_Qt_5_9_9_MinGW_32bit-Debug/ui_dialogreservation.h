@@ -107,6 +107,13 @@ public:
     QPushButton *delete_btn;
     QLabel *label_2;
     QLineEdit *deleteLine;
+    QWidget *tab;
+    QLineEdit *client_id;
+    QLineEdit *mail_pass;
+    QPushButton *browseBtn;
+    QLineEdit *file;
+    QLineEdit *rcpt;
+    QPushButton *sendBtn;
     QPushButton *back;
     QPushButton *prevcrud;
 
@@ -724,6 +731,28 @@ public:
         deleteLine->setGeometry(QRect(210, 60, 291, 20));
         deleteLine->setStyleSheet(QStringLiteral("border-image: url(:/image/image/Capture5.png);"));
         tabWidget->addTab(deletee, QString());
+        tab = new QWidget();
+        tab->setObjectName(QStringLiteral("tab"));
+        client_id = new QLineEdit(tab);
+        client_id->setObjectName(QStringLiteral("client_id"));
+        client_id->setGeometry(QRect(80, 160, 331, 20));
+        mail_pass = new QLineEdit(tab);
+        mail_pass->setObjectName(QStringLiteral("mail_pass"));
+        mail_pass->setGeometry(QRect(270, 70, 141, 20));
+        mail_pass->setEchoMode(QLineEdit::Password);
+        browseBtn = new QPushButton(tab);
+        browseBtn->setObjectName(QStringLiteral("browseBtn"));
+        browseBtn->setGeometry(QRect(340, 200, 75, 24));
+        file = new QLineEdit(tab);
+        file->setObjectName(QStringLiteral("file"));
+        file->setGeometry(QRect(80, 200, 241, 23));
+        rcpt = new QLineEdit(tab);
+        rcpt->setObjectName(QStringLiteral("rcpt"));
+        rcpt->setGeometry(QRect(80, 120, 331, 21));
+        sendBtn = new QPushButton(tab);
+        sendBtn->setObjectName(QStringLiteral("sendBtn"));
+        sendBtn->setGeometry(QRect(80, 270, 351, 23));
+        tabWidget->addTab(tab, QString());
         back = new QPushButton(dialogreservation);
         back->setObjectName(QStringLiteral("back"));
         back->setGeometry(QRect(30, 450, 601, 41));
@@ -745,7 +774,7 @@ public:
 
         retranslateUi(dialogreservation);
 
-        tabWidget->setCurrentIndex(1);
+        tabWidget->setCurrentIndex(4);
 
 
         QMetaObject::connectSlotsByName(dialogreservation);
@@ -801,6 +830,13 @@ public:
         delete_btn->setText(QApplication::translate("dialogreservation", "Delete", Q_NULLPTR));
         label_2->setText(QApplication::translate("dialogreservation", "ID :", Q_NULLPTR));
         tabWidget->setTabText(tabWidget->indexOf(deletee), QApplication::translate("dialogreservation", "DELETE", Q_NULLPTR));
+        client_id->setPlaceholderText(QApplication::translate("dialogreservation", "client id", Q_NULLPTR));
+        mail_pass->setPlaceholderText(QApplication::translate("dialogreservation", "your mail password", Q_NULLPTR));
+        browseBtn->setText(QApplication::translate("dialogreservation", "Browse ...", Q_NULLPTR));
+        file->setPlaceholderText(QApplication::translate("dialogreservation", "attachement here", Q_NULLPTR));
+        rcpt->setPlaceholderText(QApplication::translate("dialogreservation", "recipient", Q_NULLPTR));
+        sendBtn->setText(QApplication::translate("dialogreservation", "Send", Q_NULLPTR));
+        tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("dialogreservation", "MAILING", Q_NULLPTR));
         back->setText(QApplication::translate("dialogreservation", "MAINMENU", Q_NULLPTR));
         prevcrud->setText(QApplication::translate("dialogreservation", "\342\206\220", Q_NULLPTR));
     } // retranslateUi
