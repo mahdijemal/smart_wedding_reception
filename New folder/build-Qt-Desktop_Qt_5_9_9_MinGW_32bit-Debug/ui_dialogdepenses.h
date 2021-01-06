@@ -402,12 +402,12 @@ public:
 "border-image: url(:/image/image/Capture53.png);"));
         pushButton_2 = new QPushButton(read);
         pushButton_2->setObjectName(QStringLiteral("pushButton_2"));
-        pushButton_2->setGeometry(QRect(140, 340, 75, 23));
+        pushButton_2->setGeometry(QRect(50, 360, 161, 20));
         pushButton_2->setStyleSheet(QLatin1String("\n"
 "border-image: url(:/image/image/Capture53.png);"));
         pushButton_3 = new QPushButton(read);
         pushButton_3->setObjectName(QStringLiteral("pushButton_3"));
-        pushButton_3->setGeometry(QRect(410, 340, 75, 23));
+        pushButton_3->setGeometry(QRect(400, 360, 171, 20));
         pushButton_3->setStyleSheet(QLatin1String("\n"
 "border-image: url(:/image/image/Capture53.png);"));
         txt_num = new QLineEdit(read);
@@ -532,7 +532,7 @@ public:
 
         retranslateUi(dialogdepenses);
 
-        tabWidget->setCurrentIndex(3);
+        tabWidget->setCurrentIndex(0);
 
 
         QMetaObject::connectSlotsByName(dialogdepenses);

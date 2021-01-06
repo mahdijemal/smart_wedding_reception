@@ -1,5 +1,10 @@
 #include "reservation.h"
 
+#include<QPdfWriter>
+#include<QSystemTrayIcon>
+#include<QPainter>
+#include<QMessageBox>
+
 reservation::reservation()
 {
     identifiant=0;
@@ -247,4 +252,58 @@ QSqlQueryModel * reservation::affichertri7_1()
     model->setHeaderData(5, Qt::Horizontal, QObject::tr("Ntr "));
         model->setHeaderData(6, Qt::Horizontal, QObject::tr("Nsec  "));
     return model;
+}
+void reservation::pdf(){
+
+    QPdfWriter pdf("C:\\Users\\lenovo\\Documents\\file.pdf");
+    QPainter painter(&pdf);
+   int i = 4000;
+        painter.setPen(Qt::blue);
+        painter.setFont(QFont("Arial", 30));
+        painter.drawText(1100,1200,"Liste Des A");
+        painter.setPen(Qt::black);
+        painter.setFont(QFont("Arial", 15));
+        painter.drawRect(100,100,7300,2600);
+        painter.drawRect(0,3000,9600,500);
+        painter.setFont(QFont("Arial", 9));
+        painter.drawText(200,3300,"IDENTIFIANT");
+        painter.drawText(1300,3300,"SFETE");
+        painter.drawText(2100,3300,"NBANDE");
+         painter.drawText(2100,3300,"NPH");
+          painter.drawText(2100,3300,"NSER");
+           painter.drawText(2100,3300,"NTR");
+           painter.drawText(2100,3300,"NSEC");
+
+        QSqlQuery query;
+        query.prepare("select * from reservation");
+        query.exec();
+        while (query.next())
+        {
+            painter.drawText(200,i,query.value(0).toString());
+            painter.drawText(1300,i,query.value(1).toString());
+            painter.drawText(2200,i,query.value(2).toString());
+            painter.drawText(3200,i,query.value(3).toString());
+            painter.drawText(1300,i,query.value(1).toString());
+            painter.drawText(2200,i,query.value(2).toString());
+            painter.drawText(3200,i,query.value(3).toString());
+
+           i = i + 500;
+        }
+
+
+    int reponse = QMessageBox::Yes;
+    if (reponse == QMessageBox::Yes)
+{
+QSystemTrayIcon *notifyIcon = new QSystemTrayIcon;
+notifyIcon->show();
+//notifyIcon->setIcon(QIcon("icone.png"));
+
+notifyIcon->showMessage("GESTION RESERVATION ","Liste reservation pret dans PDF",QSystemTrayIcon::Information,15000);
+
+painter.end();
+}
+    if (reponse == QMessageBox::No)
+{
+painter.end();
+}
 }

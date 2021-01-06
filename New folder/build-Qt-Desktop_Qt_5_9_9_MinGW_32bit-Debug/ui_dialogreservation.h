@@ -85,7 +85,7 @@ public:
     QPushButton *type_asc_2;
     QPushButton *type_desc_3;
     QPushButton *type_asc_3;
-    QPushButton *pushButton_4;
+    QPushButton *pdf;
     QWidget *update;
     QLineEdit *idEdit;
     QPushButton *edit;
@@ -196,7 +196,7 @@ public:
         create->setObjectName(QStringLiteral("create"));
         ajouter = new QPushButton(create);
         ajouter->setObjectName(QStringLiteral("ajouter"));
-        ajouter->setGeometry(QRect(180, 350, 261, 31));
+        ajouter->setGeometry(QRect(210, 330, 301, 31));
         ajouter->setCursor(QCursor(Qt::PointingHandCursor));
         ajouter->setStyleSheet(QLatin1String("border-image: url(:/image/image/Capture5.png);\n"
 "border-image: url(:/image/image/Capture53.png);"));
@@ -512,11 +512,11 @@ public:
         pushButton->setStyleSheet(QStringLiteral("border-image: url(:/image/image/Capture53.png);"));
         pushButton_2 = new QPushButton(read);
         pushButton_2->setObjectName(QStringLiteral("pushButton_2"));
-        pushButton_2->setGeometry(QRect(60, 350, 171, 31));
+        pushButton_2->setGeometry(QRect(60, 360, 221, 21));
         pushButton_2->setStyleSheet(QStringLiteral("border-image: url(:/image/image/Capture53.png);"));
         pushButton_3 = new QPushButton(read);
         pushButton_3->setObjectName(QStringLiteral("pushButton_3"));
-        pushButton_3->setGeometry(QRect(360, 350, 171, 31));
+        pushButton_3->setGeometry(QRect(360, 360, 211, 21));
         pushButton_3->setStyleSheet(QStringLiteral("border-image: url(:/image/image/Capture53.png);"));
         horizontalLayoutWidget = new QWidget(read);
         horizontalLayoutWidget->setObjectName(QStringLiteral("horizontalLayoutWidget"));
@@ -650,19 +650,20 @@ public:
 "QPushButton:hover { background-color: none;\n"
 "color:black;\n"
 "text-decoration: none; }"));
-        pushButton_4 = new QPushButton(read);
-        pushButton_4->setObjectName(QStringLiteral("pushButton_4"));
-        pushButton_4->setGeometry(QRect(380, 10, 75, 23));
+        pdf = new QPushButton(read);
+        pdf->setObjectName(QStringLiteral("pdf"));
+        pdf->setGeometry(QRect(150, 10, 131, 21));
+        pdf->setStyleSheet(QStringLiteral("border-image: url(:/image/image/Capture53.png);"));
         tabWidget->addTab(read, QString());
         update = new QWidget();
         update->setObjectName(QStringLiteral("update"));
         idEdit = new QLineEdit(update);
         idEdit->setObjectName(QStringLiteral("idEdit"));
-        idEdit->setGeometry(QRect(260, 70, 161, 20));
+        idEdit->setGeometry(QRect(240, 70, 161, 20));
         idEdit->setStyleSheet(QStringLiteral("border-image: url(:/image/image/Capture5.png);"));
         edit = new QPushButton(update);
         edit->setObjectName(QStringLiteral("edit"));
-        edit->setGeometry(QRect(440, 70, 81, 21));
+        edit->setGeometry(QRect(430, 70, 81, 21));
         edit->setCursor(QCursor(Qt::PointingHandCursor));
         edit->setStyleSheet(QStringLiteral("border-image: url(:/image/image/Capture53.png);"));
         label_3 = new QLabel(update);
@@ -736,22 +737,28 @@ public:
         client_id = new QLineEdit(tab);
         client_id->setObjectName(QStringLiteral("client_id"));
         client_id->setGeometry(QRect(80, 160, 331, 20));
+        client_id->setStyleSheet(QStringLiteral("border-image: url(:/image/image/Capture5.png);"));
         mail_pass = new QLineEdit(tab);
         mail_pass->setObjectName(QStringLiteral("mail_pass"));
         mail_pass->setGeometry(QRect(270, 70, 141, 20));
+        mail_pass->setStyleSheet(QStringLiteral("border-image: url(:/image/image/Capture5.png);"));
         mail_pass->setEchoMode(QLineEdit::Password);
         browseBtn = new QPushButton(tab);
         browseBtn->setObjectName(QStringLiteral("browseBtn"));
         browseBtn->setGeometry(QRect(340, 200, 75, 24));
+        browseBtn->setStyleSheet(QStringLiteral("border-image: url(:/image/image/Capture53.png);"));
         file = new QLineEdit(tab);
         file->setObjectName(QStringLiteral("file"));
         file->setGeometry(QRect(80, 200, 241, 23));
+        file->setStyleSheet(QStringLiteral("border-image: url(:/image/image/Capture5.png);"));
         rcpt = new QLineEdit(tab);
         rcpt->setObjectName(QStringLiteral("rcpt"));
         rcpt->setGeometry(QRect(80, 120, 331, 21));
+        rcpt->setStyleSheet(QStringLiteral("border-image: url(:/image/image/Capture5.png);"));
         sendBtn = new QPushButton(tab);
         sendBtn->setObjectName(QStringLiteral("sendBtn"));
         sendBtn->setGeometry(QRect(80, 270, 351, 23));
+        sendBtn->setStyleSheet(QStringLiteral("border-image: url(:/image/image/Capture53.png);"));
         tabWidget->addTab(tab, QString());
         back = new QPushButton(dialogreservation);
         back->setObjectName(QStringLiteral("back"));
@@ -774,7 +781,7 @@ public:
 
         retranslateUi(dialogreservation);
 
-        tabWidget->setCurrentIndex(4);
+        tabWidget->setCurrentIndex(1);
 
 
         QMetaObject::connectSlotsByName(dialogreservation);
@@ -815,7 +822,7 @@ public:
         type_asc_2->setText(QApplication::translate("dialogreservation", "                            ^", Q_NULLPTR));
         type_desc_3->setText(QApplication::translate("dialogreservation", "                            v", Q_NULLPTR));
         type_asc_3->setText(QApplication::translate("dialogreservation", "                            ^", Q_NULLPTR));
-        pushButton_4->setText(QApplication::translate("dialogreservation", "MAIL", Q_NULLPTR));
+        pdf->setText(QApplication::translate("dialogreservation", "pdf", Q_NULLPTR));
         tabWidget->setTabText(tabWidget->indexOf(read), QApplication::translate("dialogreservation", "READ", Q_NULLPTR));
         edit->setText(QApplication::translate("dialogreservation", "Select", Q_NULLPTR));
         label_3->setText(QApplication::translate("dialogreservation", "ID :", Q_NULLPTR));

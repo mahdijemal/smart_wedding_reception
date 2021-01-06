@@ -168,7 +168,7 @@ text-decoration: underline; }
     </rect>
    </property>
    <property name="currentIndex">
-    <number>4</number>
+    <number>1</number>
    </property>
    <widget class="QWidget" name="create">
     <attribute name="title">
@@ -177,9 +177,9 @@ text-decoration: underline; }
     <widget class="QPushButton" name="ajouter">
      <property name="geometry">
       <rect>
-       <x>180</x>
-       <y>350</y>
-       <width>261</width>
+       <x>210</x>
+       <y>330</y>
+       <width>301</width>
        <height>31</height>
       </rect>
      </property>
@@ -693,9 +693,9 @@ text-decoration: none; }</string>
      <property name="geometry">
       <rect>
        <x>60</x>
-       <y>350</y>
-       <width>171</width>
-       <height>31</height>
+       <y>360</y>
+       <width>221</width>
+       <height>21</height>
       </rect>
      </property>
      <property name="styleSheet">
@@ -709,9 +709,9 @@ text-decoration: none; }</string>
      <property name="geometry">
       <rect>
        <x>360</x>
-       <y>350</y>
-       <width>171</width>
-       <height>31</height>
+       <y>360</y>
+       <width>211</width>
+       <height>21</height>
       </rect>
      </property>
      <property name="styleSheet">
@@ -914,17 +914,20 @@ text-decoration: none; }</string>
       <string>                            ^</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_4">
+    <widget class="QPushButton" name="pdf">
      <property name="geometry">
       <rect>
-       <x>380</x>
+       <x>150</x>
        <y>10</y>
-       <width>75</width>
-       <height>23</height>
+       <width>131</width>
+       <height>21</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/image/image/Capture53.png);</string>
+     </property>
      <property name="text">
-      <string>MAIL</string>
+      <string>pdf</string>
      </property>
     </widget>
    </widget>
@@ -935,7 +938,7 @@ text-decoration: none; }</string>
     <widget class="QLineEdit" name="idEdit">
      <property name="geometry">
       <rect>
-       <x>260</x>
+       <x>240</x>
        <y>70</y>
        <width>161</width>
        <height>20</height>
@@ -948,7 +951,7 @@ text-decoration: none; }</string>
     <widget class="QPushButton" name="edit">
      <property name="geometry">
       <rect>
-       <x>440</x>
+       <x>430</x>
        <y>70</y>
        <width>81</width>
        <height>21</height>
@@ -1216,6 +1219,9 @@ text-decoration: none; }</string>
        <height>20</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/image/image/Capture5.png);</string>
+     </property>
      <property name="placeholderText">
       <string>client id</string>
      </property>
@@ -1228,6 +1234,9 @@ text-decoration: none; }</string>
        <width>141</width>
        <height>20</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/image/image/Capture5.png);</string>
      </property>
      <property name="echoMode">
       <enum>QLineEdit::Password</enum>
@@ -1245,6 +1254,9 @@ text-decoration: none; }</string>
        <height>24</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/image/image/Capture53.png);</string>
+     </property>
      <property name="text">
       <string>Browse ...</string>
      </property>
@@ -1257,6 +1269,9 @@ text-decoration: none; }</string>
        <width>241</width>
        <height>23</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/image/image/Capture5.png);</string>
      </property>
      <property name="placeholderText">
       <string>attachement here</string>
@@ -1271,6 +1286,9 @@ text-decoration: none; }</string>
        <height>21</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/image/image/Capture5.png);</string>
+     </property>
      <property name="placeholderText">
       <string>recipient</string>
      </property>
@@ -1283,6 +1301,9 @@ text-decoration: none; }</string>
        <width>351</width>
        <height>23</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/image/image/Capture53.png);</string>
      </property>
      <property name="text">
       <string>Send</string>

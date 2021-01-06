@@ -88,7 +88,7 @@ text-decoration: underline; }
     <string notr="true">border-image: url(:/image/image/Capture53.png);</string>
    </property>
    <property name="text">
-    <string>     CLIENT</string>
+    <string>                   CLIENT</string>
    </property>
   </widget>
   <widget class="QPushButton" name="logout">
@@ -113,9 +113,9 @@ text-decoration: underline; }
   <widget class="QPushButton" name="prevcrud">
    <property name="geometry">
     <rect>
-     <x>210</x>
+     <x>190</x>
      <y>10</y>
-     <width>21</width>
+     <width>41</width>
      <height>31</height>
     </rect>
    </property>
@@ -129,9 +129,9 @@ text-decoration: underline; }
   <widget class="QPushButton" name="nextmodule">
    <property name="geometry">
     <rect>
-     <x>620</x>
+     <x>599</x>
      <y>460</y>
-     <width>20</width>
+     <width>41</width>
      <height>41</height>
     </rect>
    </property>
@@ -307,9 +307,9 @@ text-decoration: underline; }
      <property name="geometry">
       <rect>
        <x>470</x>
-       <y>0</y>
+       <y>10</y>
        <width>141</width>
-       <height>31</height>
+       <height>21</height>
       </rect>
      </property>
      <property name="styleSheet">
@@ -560,10 +560,10 @@ text-decoration: none; }</string>
     <widget class="QPushButton" name="pushButton_2">
      <property name="geometry">
       <rect>
-       <x>80</x>
-       <y>340</y>
-       <width>171</width>
-       <height>31</height>
+       <x>30</x>
+       <y>350</y>
+       <width>211</width>
+       <height>21</height>
       </rect>
      </property>
      <property name="styleSheet">
@@ -576,10 +576,10 @@ text-decoration: none; }</string>
     <widget class="QPushButton" name="pushButton_3">
      <property name="geometry">
       <rect>
-       <x>340</x>
-       <y>340</y>
-       <width>171</width>
-       <height>31</height>
+       <x>360</x>
+       <y>350</y>
+       <width>231</width>
+       <height>21</height>
       </rect>
      </property>
      <property name="styleSheet">
@@ -809,14 +809,17 @@ text-decoration: none; }</string>
     <widget class="QPushButton" name="pushButton_4">
      <property name="geometry">
       <rect>
-       <x>370</x>
-       <y>0</y>
-       <width>91</width>
-       <height>31</height>
+       <x>160</x>
+       <y>10</y>
+       <width>141</width>
+       <height>21</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/image/image/Capture53.png);</string>
+     </property>
      <property name="text">
-      <string>STAT</string>
+      <string>STATISTIQUE</string>
      </property>
     </widget>
    </widget>
@@ -948,14 +951,14 @@ border-image: url(:/image/image/Capture5.png);</string>
     <widget class="QLabel" name="label_4">
      <property name="geometry">
       <rect>
-       <x>40</x>
+       <x>30</x>
        <y>120</y>
        <width>81</width>
        <height>51</height>
       </rect>
      </property>
      <property name="text">
-      <string>NEW IDC : </string>
+      <string>NEW ID CLIENT : </string>
      </property>
     </widget>
     <widget class="QLabel" name="label_5">
@@ -1014,9 +1017,9 @@ border-image: url(:/image/image/Capture5.png);</string>
      <property name="geometry">
       <rect>
        <x>300</x>
-       <y>289</y>
+       <y>299</y>
        <width>121</width>
-       <height>31</height>
+       <height>21</height>
       </rect>
      </property>
      <property name="styleSheet">
@@ -1083,7 +1086,7 @@ border-image: url(:/image/image/Capture5.png);</string>
     <rect>
      <x>0</x>
      <y>460</y>
-     <width>21</width>
+     <width>51</width>
      <height>41</height>
     </rect>
    </property>
@@ -1097,9 +1100,9 @@ border-image: url(:/image/image/Capture5.png);</string>
   <widget class="QPushButton" name="back">
    <property name="geometry">
     <rect>
-     <x>20</x>
+     <x>50</x>
      <y>460</y>
-     <width>601</width>
+     <width>551</width>
      <height>41</height>
     </rect>
    </property>
@@ -1118,7 +1121,7 @@ border-image: url(:/image/image/Capture5.png);</string>
     <rect>
      <x>360</x>
      <y>10</y>
-     <width>21</width>
+     <width>41</width>
      <height>31</height>
     </rect>
    </property>

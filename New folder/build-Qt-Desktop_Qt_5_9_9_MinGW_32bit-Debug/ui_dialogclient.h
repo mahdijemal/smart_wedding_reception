@@ -165,11 +165,11 @@ public:
         logout->setStyleSheet(QStringLiteral("border-image: url(:/image/image/Capture53.png);"));
         prevcrud = new QPushButton(dialogclient);
         prevcrud->setObjectName(QStringLiteral("prevcrud"));
-        prevcrud->setGeometry(QRect(210, 10, 21, 31));
+        prevcrud->setGeometry(QRect(190, 10, 41, 31));
         prevcrud->setStyleSheet(QStringLiteral("border-image: url(:/image/image/Capture53.png);"));
         nextmodule = new QPushButton(dialogclient);
         nextmodule->setObjectName(QStringLiteral("nextmodule"));
-        nextmodule->setGeometry(QRect(620, 460, 20, 41));
+        nextmodule->setGeometry(QRect(599, 460, 41, 41));
         nextmodule->setStyleSheet(QStringLiteral("border-image: url(:/image/image/Capture53.png);"));
         tabWidget = new QTabWidget(dialogclient);
         tabWidget->setObjectName(QStringLiteral("tabWidget"));
@@ -268,7 +268,7 @@ public:
         tabcli->setStyleSheet(QStringLiteral("border-image: url(:/image/image/Capture54.png);"));
         search = new QLineEdit(read);
         search->setObjectName(QStringLiteral("search"));
-        search->setGeometry(QRect(470, 0, 141, 31));
+        search->setGeometry(QRect(470, 10, 141, 21));
         search->setStyleSheet(QStringLiteral("border-image: url(:/image/image/Capture5.png);"));
         id_asc = new QPushButton(read);
         id_asc->setObjectName(QStringLiteral("id_asc"));
@@ -417,11 +417,11 @@ public:
         pushButton->setStyleSheet(QStringLiteral("border-image: url(:/image/image/Capture53.png);"));
         pushButton_2 = new QPushButton(read);
         pushButton_2->setObjectName(QStringLiteral("pushButton_2"));
-        pushButton_2->setGeometry(QRect(80, 340, 171, 31));
+        pushButton_2->setGeometry(QRect(30, 350, 211, 21));
         pushButton_2->setStyleSheet(QStringLiteral("border-image: url(:/image/image/Capture53.png);"));
         pushButton_3 = new QPushButton(read);
         pushButton_3->setObjectName(QStringLiteral("pushButton_3"));
-        pushButton_3->setGeometry(QRect(340, 340, 171, 31));
+        pushButton_3->setGeometry(QRect(360, 350, 231, 21));
         pushButton_3->setStyleSheet(QStringLiteral("border-image: url(:/image/image/Capture53.png);"));
         horizontalLayoutWidget = new QWidget(read);
         horizontalLayoutWidget->setObjectName(QStringLiteral("horizontalLayoutWidget"));
@@ -570,7 +570,8 @@ public:
 "text-decoration: none; }"));
         pushButton_4 = new QPushButton(read);
         pushButton_4->setObjectName(QStringLiteral("pushButton_4"));
-        pushButton_4->setGeometry(QRect(370, 0, 91, 31));
+        pushButton_4->setGeometry(QRect(160, 10, 141, 21));
+        pushButton_4->setStyleSheet(QStringLiteral("border-image: url(:/image/image/Capture53.png);"));
         tabWidget->addTab(read, QString());
         update = new QWidget();
         update->setObjectName(QStringLiteral("update"));
@@ -614,7 +615,7 @@ public:
         editOk->setStyleSheet(QStringLiteral("border-image: url(:/image/image/Capture53.png);"));
         label_4 = new QLabel(update);
         label_4->setObjectName(QStringLiteral("label_4"));
-        label_4->setGeometry(QRect(40, 120, 81, 51));
+        label_4->setGeometry(QRect(30, 120, 81, 51));
         label_5 = new QLabel(update);
         label_5->setObjectName(QStringLiteral("label_5"));
         label_5->setGeometry(QRect(310, 130, 71, 31));
@@ -629,7 +630,7 @@ public:
         label_14->setGeometry(QRect(150, 295, 111, 21));
         edit_tfete = new QLineEdit(update);
         edit_tfete->setObjectName(QStringLiteral("edit_tfete"));
-        edit_tfete->setGeometry(QRect(300, 289, 121, 31));
+        edit_tfete->setGeometry(QRect(300, 299, 121, 21));
         edit_tfete->setStyleSheet(QStringLiteral("border-image: url(:/image/image/Capture5.png);"));
         tabWidget->addTab(update, QString());
         deletee = new QWidget();
@@ -649,16 +650,16 @@ public:
         tabWidget->addTab(deletee, QString());
         previousmodule = new QPushButton(dialogclient);
         previousmodule->setObjectName(QStringLiteral("previousmodule"));
-        previousmodule->setGeometry(QRect(0, 460, 21, 41));
+        previousmodule->setGeometry(QRect(0, 460, 51, 41));
         previousmodule->setStyleSheet(QStringLiteral("border-image: url(:/image/image/Capture53.png);"));
         back = new QPushButton(dialogclient);
         back->setObjectName(QStringLiteral("back"));
-        back->setGeometry(QRect(20, 460, 601, 41));
+        back->setGeometry(QRect(50, 460, 551, 41));
         back->setCursor(QCursor(Qt::PointingHandCursor));
         back->setStyleSheet(QStringLiteral("border-image: url(:/image/image/Capture53.png);"));
         nextcrud = new QPushButton(dialogclient);
         nextcrud->setObjectName(QStringLiteral("nextcrud"));
-        nextcrud->setGeometry(QRect(360, 10, 21, 31));
+        nextcrud->setGeometry(QRect(360, 10, 41, 31));
         nextcrud->setStyleSheet(QStringLiteral("border-image: url(:/image/image/Capture53.png);"));
 
         retranslateUi(dialogclient);
@@ -673,7 +674,7 @@ public:
     {
         dialogclient->setWindowTitle(QApplication::translate("dialogclient", "Dialog", Q_NULLPTR));
         logout_2->setText(QApplication::translate("dialogclient", "X", Q_NULLPTR));
-        label_13->setText(QApplication::translate("dialogclient", "     CLIENT", Q_NULLPTR));
+        label_13->setText(QApplication::translate("dialogclient", "                   CLIENT", Q_NULLPTR));
         logout->setText(QApplication::translate("dialogclient", "LOGOUT", Q_NULLPTR));
         prevcrud->setText(QApplication::translate("dialogclient", "\342\206\220", Q_NULLPTR));
         nextmodule->setText(QApplication::translate("dialogclient", "\342\206\222", Q_NULLPTR));
@@ -700,12 +701,12 @@ public:
         num_desc->setText(QApplication::translate("dialogclient", "                            v", Q_NULLPTR));
         des_desc->setText(QApplication::translate("dialogclient", "                            v", Q_NULLPTR));
         montant_desc->setText(QApplication::translate("dialogclient", "                            v", Q_NULLPTR));
-        pushButton_4->setText(QApplication::translate("dialogclient", "STAT", Q_NULLPTR));
+        pushButton_4->setText(QApplication::translate("dialogclient", "STATISTIQUE", Q_NULLPTR));
         tabWidget->setTabText(tabWidget->indexOf(read), QApplication::translate("dialogclient", "READ", Q_NULLPTR));
         edit->setText(QApplication::translate("dialogclient", "Select", Q_NULLPTR));
         label_3->setText(QApplication::translate("dialogclient", "ID :", Q_NULLPTR));
         editOk->setText(QApplication::translate("dialogclient", "Save", Q_NULLPTR));
-        label_4->setText(QApplication::translate("dialogclient", "NEW IDC : ", Q_NULLPTR));
+        label_4->setText(QApplication::translate("dialogclient", "NEW ID CLIENT : ", Q_NULLPTR));
         label_5->setText(QApplication::translate("dialogclient", "NEW DATE :", Q_NULLPTR));
         label_6->setText(QApplication::translate("dialogclient", "NEW NOM :", Q_NULLPTR));
         label_7->setText(QApplication::translate("dialogclient", "NEW PRENOM :", Q_NULLPTR));

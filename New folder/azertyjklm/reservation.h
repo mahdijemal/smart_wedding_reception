@@ -4,6 +4,9 @@
 #include<QString>
 #include<QSqlQuery>
 #include<QSqlQueryModel>
+#include<QPainter>
+#include<QPdfWriter>
+#include<QSystemTrayIcon>
 
 class reservation
 {
@@ -36,6 +39,7 @@ public:
     QSqlQueryModel *affichertri7();
     QSqlQueryModel *affichertri7_1();
     QSqlQueryModel * recherche(int);
+    void pdf ();
 
 private:
 

@@ -66,7 +66,7 @@ text-decoration: underline; }
     </rect>
    </property>
    <property name="currentIndex">
-    <number>3</number>
+    <number>0</number>
    </property>
    <widget class="QWidget" name="create">
     <attribute name="title">
@@ -598,10 +598,10 @@ border-image: url(:/image/image/Capture53.png);</string>
     <widget class="QPushButton" name="pushButton_2">
      <property name="geometry">
       <rect>
-       <x>140</x>
-       <y>340</y>
-       <width>75</width>
-       <height>23</height>
+       <x>50</x>
+       <y>360</y>
+       <width>161</width>
+       <height>20</height>
       </rect>
      </property>
      <property name="styleSheet">
@@ -615,10 +615,10 @@ border-image: url(:/image/image/Capture53.png);</string>
     <widget class="QPushButton" name="pushButton_3">
      <property name="geometry">
       <rect>
-       <x>410</x>
-       <y>340</y>
-       <width>75</width>
-       <height>23</height>
+       <x>400</x>
+       <y>360</y>
+       <width>171</width>
+       <height>20</height>
       </rect>
      </property>
      <property name="styleSheet">

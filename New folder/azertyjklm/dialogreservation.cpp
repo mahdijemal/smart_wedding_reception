@@ -530,3 +530,10 @@ void   dialogreservation::mailSent(QString status)
     ui->mail_pass->clear();
      ui->client_id->clear();
 }
+
+
+
+void dialogreservation::on_pdf_clicked()
+{
+    tmpres.pdf();
+}

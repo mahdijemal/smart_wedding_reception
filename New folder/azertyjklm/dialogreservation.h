@@ -89,6 +89,12 @@ private slots:
     void mailSent(QString);
 
 
+    void on_sendBtn_clicked();
+
+    void on_pushButton_5_clicked();
+
+    void on_pdf_clicked();
+
 private:
     Ui::dialogreservation *ui;
     reservation tmpres;
